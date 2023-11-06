@@ -6,8 +6,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=shadowsocks-rust
-PKG_VERSION:=1.15.4
-PKG_RELEASE:=2
+PKG_VERSION:=1.17.0
+PKG_RELEASE:=1
 
 PKG_SOURCE_HEADER:=shadowsocks-v$(PKG_VERSION)
 PKG_SOURCE_BODY:=unknown-linux-gnu
@@ -16,7 +16,7 @@ PKG_SOURCE_URL:=https://github.com/shadowsocks/shadowsocks-rust/releases/downloa
 
 ifeq ($(ARCH),aarch64)
   PKG_SOURCE:=$(PKG_SOURCE_HEADER).aarch64-$(PKG_SOURCE_BODY).$(PKG_SOURCE_FOOTER)
-  PKG_HASH:=c8d29b4ee67e2f3459636e8e591f81ad54833881e5ba8f9ea3e559cbf93843cb
+  PKG_HASH:=6c60475ca6a1508d5c2e068f46c2c868cb6f8cad750c7910a5f0c8e62beb6dd2
 else
   PKG_SOURCE:=dummy
   PKG_HASH:=dummy
